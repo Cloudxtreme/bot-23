@@ -1,2 +1,5 @@
 env/*
 *~
+*.pyc
+*.pyo
+*.egg-info/

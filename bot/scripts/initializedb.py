@@ -2,7 +2,7 @@ import os
 import sys
 import transaction
 
-from sqlalchemy import engine_from_config
+from ..openshift_environment import get_engine
 
 from pyramid.paster import (
     get_appsettings,
@@ -31,6 +31,6 @@ def main(argv=sys.argv):
     options = parse_vars(argv[2:])
     setup_logging(config_uri)
     settings = get_appsettings(config_uri, options=options)
-    engine = engine_from_config(settings, 'sqlalchemy.')
+    engine = get_engine(settings)
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
