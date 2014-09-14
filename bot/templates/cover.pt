@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html lang="${request.locale_name}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bot">
+    <meta name="author" content="Carlos Gustavo Ruiz - atmantree.com">
+    <link rel="shortcut icon" href="${request.static_url('bot:static/pyramid-16x16.png')}">
+
+    <title>I'm bot</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this scaffold -->
+    <link href="${request.static_url('bot:static/css/cover.css')}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Bot</h3>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="http://atmantree.com">atmantree.com</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">I'm bot</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus nisi sit amet turpis lobortis vestibulum.</p>
+            <p class="lead">
+              <a href="https://twitter.com/__atmantree__" class="btn btn-lg btn-default">Go to Bot</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="${request.static_url('bot:static/js/bootstrap.min.js')}"></script>
+    <script src="${request.static_url('bot:static/js/docs.min.js')}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="${request.static_url('bot:static/js/ie10-viewport-bug-workaround.js')}"></script>
+  </body>
+</html>
