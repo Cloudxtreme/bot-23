@@ -34,18 +34,28 @@
             <div class="inner">
               <h3 class="masthead-brand">Bot</h3>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="${request.route_url('login')}">Login</a></li>
+                  <li><a href="${request.route_url('home')}">Home</a></li>
+                <li class="active"><a href="#">Login</a></li>
               </ul>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">I'm bot</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus nisi sit amet turpis lobortis vestibulum.</p>
-            <p class="lead">
-              <a href="https://twitter.com/__atmantree__" class="btn btn-lg btn-default">Go to Bot</a>
-            </p>
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+            <form>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-lg btn-default">Login</button>
+            </form>
+              </div>
+            </div>
           </div>
 
           <div class="mastfoot">

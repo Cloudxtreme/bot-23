@@ -23,43 +23,6 @@
     <![endif]-->
   </head>
   <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Bot</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="${request.route_url('login')}">Login</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">I'm bot</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus nisi sit amet turpis lobortis vestibulum.</p>
-            <p class="lead">
-              <a href="https://twitter.com/__atmantree__" class="btn btn-lg btn-default">Go to Bot</a>
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

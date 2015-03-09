@@ -1,1 +1,1 @@
-libturpial==1.0
+https://github.com/satanas/libturpial/archive/v1.0.zip

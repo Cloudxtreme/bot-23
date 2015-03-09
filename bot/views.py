@@ -9,27 +9,14 @@ from .models import (
 
 
 @view_config(route_name='home', renderer='templates/cover.pt')
-def my_view(request):
-    try:
-        one = 1
-    except DBAPIError:
-        return Response(conn_err_msg, content_type='text/plain', status_int=500)
-    return {'one': one, 'project': 'bot'}
+def home(request):
+    return {}
 
+@view_config(route_name='login', renderer='templates/login.pt')
+def login(request):
+    return {}
 
-conn_err_msg = """\
-Pyramid is having a problem using your SQL database.  The problem
-might be caused by one of the following things:
-
-1.  You may need to run the "initialize_bot_db" script
-    to initialize your database tables.  Check your virtual
-    environment's "bin" directory for this script and try to run it.
-
-2.  Your database server may not be running.  Check that the
-    database server referred to by the "sqlalchemy.url" setting in
-    your "development.ini" file is running.
-
-After you fix the problem, please restart the Pyramid application to
-try it again.
-"""
+@view_config(route_name='dashboard', renderer='templates/dashboard.pt')
+def dashboard(request):
+    return {}
 
