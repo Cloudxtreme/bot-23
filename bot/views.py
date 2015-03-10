@@ -13,7 +13,7 @@ from .models import (
     )
 
 
-@view_config(route_name='home', renderer='templates/cover.pt')
+@view_config(route_name='home', renderer='templates/home.pt')
 def home(request):
     return {}
 
@@ -22,11 +22,11 @@ def login(request):
     return {}
 
 @view_config(route_name='logout')
-def logout(request)
+def logout(request):
     '''
     view to logout from bot
     '''
-    return HTTPNotFound(location = request.route_url('home'),
+    return HTTPFound(location = request.route_url('home'),
                         headers = forget(request))
 
 @view_config(route_name='dashboard', renderer='templates/dashboard.pt')

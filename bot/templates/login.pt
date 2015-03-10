@@ -35,7 +35,7 @@
               <h3 class="masthead-brand">Bot</h3>
               <ul class="nav masthead-nav">
                   <li><a href="${request.route_url('home')}">Home</a></li>
-                <li class="active"><a href="#">Login</a></li>
+                  <li class="active"><a href="#">Login</a></li>
               </ul>
             </div>
           </div>
@@ -52,7 +52,7 @@
                 <label class="sr-only" for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
-              <button type="submit" class="btn btn-lg btn-default">Login</button>
+              <a href="${request.route_url('dashboard')}" role="button" class="btn btn-lg btn-default">Login</a>
             </form>
               </div>
             </div>

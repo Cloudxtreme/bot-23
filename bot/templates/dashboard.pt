@@ -23,6 +23,38 @@
     <![endif]-->
   </head>
   <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Bot</h3>
+              <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Dashboard</a></li>
+                  <l><a href="${request.route_url('logout')}">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inner cover">
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
