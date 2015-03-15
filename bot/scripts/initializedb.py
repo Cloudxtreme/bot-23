@@ -14,6 +14,12 @@ from pyramid.scripts.common import parse_vars
 from ..models import (
     DBSession,
     Base,
+    Permission,
+    Group,
+    User,
+    TwitterAccount,
+    Tweet,
+    group_permissions,
     )
 
 
