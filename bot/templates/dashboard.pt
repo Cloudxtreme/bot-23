@@ -35,12 +35,127 @@
               <h3 class="masthead-brand">Bot</h3>
               <ul class="nav masthead-nav">
                   <li class="active"><a href="#">Dashboard</a></li>
-                  <l><a href="${request.route_url('logout')}">Logout</a></li>
+                  <li><a href="${request.route_url('logout')}">Logout</a></li>
               </ul>
             </div>
           </div>
 
           <div class="inner cover">
+              <div class="row">
+                  <div class="col-md-2">
+                      <a class="btn btn-primary" role="button" href="#">Add Account</a>
+                  </div>
+                  <div class="col-md-10">
+                      <div class="panel">
+                          <div class="panel-body">
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-primary btn-sm">@bot01</button>
+                                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                      <span class="caret"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">List Tweets</a></li>
+                                      <li><a href="#">Add Tweet</a></li>
+                                      <li class="divider"></li>
+                                      <li><a href="#">Delete Account</a></li>
+                                  </ul>
+                              </div>
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-primary btn-sm">@bot02</button>
+                                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                      <span class="caret"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">List Tweets</a></li>
+                                      <li><a href="#">Add Tweet</a></li>
+                                      <li class="divider"></li>
+                                      <li><a href="#">Delete Account</a></li>
+                                  </ul>
+                              </div>
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-primary btn-sm">@bot03</button>
+                                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                      <span class="caret"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">List Tweets</a></li>
+                                      <li><a href="#">Add Tweet</a></li>
+                                      <li class="divider"></li>
+                                      <li><a href="#">Delete Account</a></li>
+                                  </ul>
+                              </div>
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-primary btn-sm">@bot04</button>
+                                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                      <span class="caret"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">List Tweets</a></li>
+                                      <li><a href="#">Add Tweet</a></li>
+                                      <li class="divider"></li>
+                                      <li><a href="#">Delete Account</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div> 
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <table class="table">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Account</th>
+                              <th>Tweet</th>
+                              <th>Frequency</th>
+                              <th>Edit</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td><a href="#">@bot01</a></td>
+                              <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, sapien nec..."</td>
+                              <td>20m</td>
+                              <td><button class="btn btn-xs btn-default" role="button">edit</button></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td><a href="#">@bot01</a></td>
+                              <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, sapien nec..."</td>
+                              <td>30m</td>
+                              <td><button class="btn btn-xs btn-default" role="button">edit</button></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td><a href="#">@bot02</a></td>
+                              <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, sapien nec..."</td>
+                              <td>3d</td>
+                              <td><button class="btn btn-xs btn-default" role="button">edit</button></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td><a href="#">@bot03</a></td>
+                              <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, sapien nec..."</td>
+                              <td>2h</td>
+                              <td><button class="btn btn-xs btn-default" role="button">edit</button></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td><a href="#">@bot01</a></td>
+                              <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, sapien nec..."</td>
+                              <td>45m</td>
+                              <td><button class="btn btn-xs btn-default" role="button">edit</button></td>
+                            </tr>
+                          </tbody>
+                      </table>   
+                  </div>
+              </div>
           </div>
 
           <div class="mastfoot">
