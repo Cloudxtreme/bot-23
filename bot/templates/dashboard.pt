@@ -14,7 +14,7 @@
     <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this scaffold -->
-    <link href="${request.static_url('bot:static/css/cover.css')}" rel="stylesheet">
+    <link href="${request.static_url('bot:static/css/blog.css')}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -24,43 +24,41 @@
   </head>
   <body>
 
-    <div class="site-wrapper">
+    <div class="blog-masthead">
+        <div class="container">
+        <nav class="blog-nav">
+            <a class="blog-nav-item active" href="#">Dashboard</a>
+            <a class="blog-nav-item pull-right" href="${request.route_url('logout')}">Logout</a>
+        </nav>
+        </div>
+    </div>
 
-      <div class="site-wrapper-inner">
+    <div class="container">
 
-        <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Bot</h3>
-              <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Dashboard</a></li>
-                  <li><a href="${request.route_url('logout')}">Logout</a></li>
-              </ul>
+        <div class="blog-header">
+            <h1 class="blog-title">Bot</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <a class="btn btn-primary" role="button" href="#">Add Account</a>
             </div>
-          </div>
-
-          <div class="inner cover">
-              <div class="row">
-                  <div class="col-md-2">
-                      <a class="btn btn-primary" role="button" href="#">Add Account</a>
-                  </div>
-                  <div class="col-md-10">
-                      <div class="panel">
-                          <div class="panel-body">
-                              <div class="btn-group">
-                                  <button type="button" class="btn btn-primary btn-sm">@bot01</button>
-                                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                      <span class="caret"></span>
-                                      <span class="sr-only">Toggle Dropdown</span>
-                                  </button>
-                                  <ul class="dropdown-menu" role="menu">
-                                      <li><a href="#">List Tweets</a></li>
-                                      <li><a href="#">Add Tweet</a></li>
-                                      <li class="divider"></li>
-                                      <li><a href="#">Delete Account</a></li>
-                                  </ul>
-                              </div>
+            <div class="col-md-10">
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-sm">@bot01</button>
+                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">List Tweets</a></li>
+                                <li><a href="#">Add Tweet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Delete Account</a></li>
+                            </ul>
+                        </div>
                               <div class="btn-group">
                                   <button type="button" class="btn btn-primary btn-sm">@bot02</button>
                                   <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -104,7 +102,7 @@
                       </div> 
                   </div>
               </div>
-              <div class="row">
+        <div class="row">
                   <div class="col-md-12">
                       <table class="table">
                           <thead>
@@ -156,19 +154,15 @@
                       </table>   
                   </div>
               </div>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
 
     </div>
+
+     <footer class="blog-footer">
+        <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
